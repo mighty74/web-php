@@ -1,0 +1,125 @@
+body {
+    min-width: 150px;
+    margin: 0;
+    font-family: serif;
+    color: #454C50;
+    background-color: #D7E6EF;
+}
+
+.top {
+    display: flex;
+    min-height: 50vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #454C50;
+    z-index: 2;
+    background-image: url('../img/top.jpg');
+    background-size: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    display: block;
+    margin-top: 1rem;
+    border-bottom: 4px solid #454C50;
+}
+
+.main {
+    padding: 2rem 3rem;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin: 0 0 0 1rem;
+}
+
+.contents {
+    display: flex;
+    padding: 2rem 1rem 4rem 1rem;
+    justify-content: center;
+}
+
+.aboutImg {
+    width: 600px;
+    height: 450px;
+    min-width: 600px;
+    margin: auto;
+}
+
+.aboutImg img {
+    border-radius: 20%;
+    /* filter: blur(1px); */
+}
+
+.aboutContents {
+    width: 500px;
+    height: 400px;
+    min-width: 500px;
+    margin: 50px auto 0 auto;
+    vertical-align: middle;
+}
+
+.contentItem {
+    display: flex;
+}
+
+
+.icon {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text1 {
+    margin: auto;
+    font-size: 6vw;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    text-shadow:5px 5px 5px rgb(0, 38, 255);
+}
+
+.text2 {
+    font-size: 1rem;
+    margin: 0 0 2rem 1rem;
+}
+
+.text3 {
+    font-size: 1.5rem;
+    margin: 0 0 0 1rem;
+}
+
+.text4 {
+    font-size: 1.3rem;
+    margin: 0 0 0 1rem;
+}
+
+@media screen and (max-width: 1400px){
+    .contents {
+        display: block;
+    }
+    .aboutImg {
+        width: 40vw;
+        height: 30vw;
+        min-width: 240px;
+        min-height: 180px;
+    }
+    .aboutContents {
+        width: 40vw;
+        min-width: 240px;
+    }
+    .area {
+        width:  70vw;
+    }
+    .contentWorks {
+        width: 100%;
+    }
+    .text4 {
+        font-size: 1rem;
+    }
+}
