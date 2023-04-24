@@ -1,4 +1,5 @@
 body {
+    width: 1440px;
     min-width: 150px;
     margin: 0;
     font-family: serif;
@@ -156,10 +157,25 @@ body {
     margin: 10px auto auto 200px;
 }
 
+progress {
+    accent-color: #D7E6EF;
+    -webkit-appearance: none;
+}
+::-webkit-progress-bar {
+    background-color: #D7E6EF;
+    border-radius: 4px;
+    border: 1.5px solid #858e94;
+
+}
+::-webkit-progress-value {
+    background-color: #66b9ea;;
+    border-radius: 3px;
+}
+
 .label-area {
     display: flex;
     flex-wrap: wrap;
-    width: 720px;
+    width: 760px;
     justify-content: center;
 }
 
@@ -182,18 +198,32 @@ body {
 
 .work-img {
     position: relative;
-    width: 700px;
+    width: 800px;
     height: 100px;
     background-color: #454C50;
+    border: 1.5px solid #454C50;
     overflow: hidden;
 }
 
+.work-img img {
+    width: 800px;
+    height: 100px;
+    object-fit: cover;
+    opacity: 90%;
+}
+
 .work-name {
-    position: absolute;
-    width: 700px;
-    top: 40%;
+    position: relative;
+    width: 200px;
+    height: 36px;
+    margin: 0 auto;
+    top: -70%;
     z-index: 1;
-    color: #ffffff;
+    font-size: 24px;
+    background-color: antiquewhite;
+    clip-path: inset(0 round 2px 2px 2px 2px);
+    opacity: 95%;
+    overflow: hidden;
 }
 
 .submit-box {
@@ -210,15 +240,19 @@ body {
 }
 
 .work-left, .work-right {
-    width: 100px;
-    font-size: 24px;
+    display: none;
+    width: 50px;
+    font-size: 32px;
     margin: auto 0;
 }
 
 .work:hover .work-left,
 .work:hover .work-right{
-    width: 50px;
-    font-size: 32px;
+    display: block;
+}
+
+.work:hover .work-name{
+    font-size: 26px;
 }
 
 .icon {
@@ -262,6 +296,11 @@ ul li {
     text-align: left;
     font-size: 24px;
     margin-top: 100px;
+}
+
+.level {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .text1 {

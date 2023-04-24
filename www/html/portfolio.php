@@ -41,7 +41,7 @@
 
     <body>
         <div class="header">
-            <p class="text-header">🖥 Hori Kosuke's Portfolio</p>
+            <p class="text-header">● Hori Kosuke's Portfolio</p>
             <ul>
                 <li class="text-header"><a href="#top">Top</a></li>
                 <li class="text-header"><a href="#aboutme">About</a></li>
@@ -54,10 +54,10 @@
                     <a href="https://twitter.com/hori_7474" target="_blank"><img src="./img/twitter-bird-icon.png" width="100%"></a>
                 </div>
                 <div class="header-icon">
-                    <img src="./img/github.png" width="100%">
+                <a href="https://github.com/mighty74" target="_blank"><img src="./img/github.png" width="100%"></a>
                 </div>
             </div>
-            <a href="index.php"><p class="header-edit">Edit</p></a>
+            <a href="login.php"><p class="header-edit">Edit</p></a>
         </div> 
         <div class="top" id="top">
             <div class="top-text">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="contents">
                     <div class="aboutImg">
-                        <img src="./img/about.JPG" width="80%">
+                        <img src="./img/about.png" width="80%">
                     </div>
                     <div class="aboutContents">
                         <h1>Hori Kosuke</h1>
@@ -129,8 +129,10 @@
                                 $skill_name[] = $row['skill_name'];
                                 echo '<div class="skill" id="skill' . $row['skill_id'] . '">';
                                     echo '<p class="skill-type">' . $row['skill_type'] . '</p>';
-                                    echo '<img src="' . $row['skill_img_path'] . '" width=20% alt="a" title="a">';
+                                    echo '<img src="' . $row['skill_img_path'] . '" width=20% alt="' . $row['skill_name'] . '" title="' . $row['skill_name'] . '">';
                                     echo '<p class="skill-name">' . $row['skill_name'] . '</p>';
+                                    echo '<p class="level">level:</p>';
+                                    echo '<progress max="100" value="' . $row['skill_level'] . '"></progress>';
                                     echo '<p class="skill-content">' . $row['skill_content'] . '</p>';
                                     echo '<style type="text/css">';
                                         echo '#tab' . $row['skill_id'] . ':checked ~ #skill' . $row['skill_id'] . '{display: block;}';
@@ -153,20 +155,6 @@
                 <p class="text-content">Works</p>
                 </div>
                 <div class="works-area">
-                    <div class="work">
-                        <p class="work-left">[</p>
-                        <div class="work-img">
-                            <img src="./img/works/chimerand.png" width="100%">
-                            <form method=get action="index.php">
-                                <div class="submit-box">
-                                    <input type="hidden" name="work_id" value=<?php echo htmlspecialchars('12', ENT_QUOTES, 'utf-8'); ?>>
-                                    <input type="submit" value="詳細へ" class="detail-btn">
-                                </div>
-                            </form>
-                            <p class="work-name">aaaaaaaaa</p>
-                        </div>
-                        <p class="work-right">]</p>
-                    </div>
                     <?php
                         foreach ($works as $row){
                             echo '<div class="work">';
