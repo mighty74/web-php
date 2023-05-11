@@ -51,7 +51,7 @@
             </ul>
             <div class="header-img">
                 <div class="header-icon">
-                    <a href="https://twitter.com/hori_7474" target="_blank"><img src="./img/twitter-bird-icon.png" width="100%"></a>
+                    <a href="https://twitter.com/hori__engi" target="_blank"><img src="./img/twitter-bird-icon.png" width="100%"></a>
                 </div>
                 <div class="header-icon">
                 <a href="https://github.com/mighty74" target="_blank"><img src="./img/github.png" width="100%"></a>
@@ -161,7 +161,7 @@
                                 echo '<p class="work-left">[</p>';
                                 echo '<div class="work-img">';
                                     echo '<img src="' . $row['work_img_path'] . '" width="100%">';
-                                    echo '<form method=get action="index.php">';
+                                    echo '<form method=get action="detail.php">';
                                         echo '<div class="submit-box">';
                                             echo '<input type="hidden" name="work_id" value=' . $row['work_id'] . '>';
                                             echo '<input type="submit" value="詳細へ" class="detail-btn">';

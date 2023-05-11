@@ -152,8 +152,9 @@ body {
     width: 760px;
     height: 90px;
     font-size: 24px;
-    text-align: left;
-    margin: 10px auto auto 200px;
+    text-align: center;
+    margin: 10px auto;
+    border-bottom: 1px solid #454c5040;
 }
 
 progress {
@@ -181,6 +182,7 @@ progress {
 .tab-menu {
     width: 100px;
     margin: 0 10px;
+    border-radius: 4px;
 }
 
 .works-area {
@@ -208,7 +210,7 @@ progress {
     width: 800px;
     height: 100px;
     object-fit: cover;
-    opacity: 90%;
+    opacity: 40%;
 }
 
 .work-name {
@@ -227,14 +229,15 @@ progress {
 
 .submit-box {
     position: absolute;
-    width: 700px;
+    width: 800px;
+    height: 100px;
     top: 0%;
     z-index: 2;
     opacity: 0;
 }
 
 .detail-btn {
-    width: 700px;
+    width: 800px;
     height: 100px;
 }
 
@@ -250,8 +253,8 @@ progress {
     display: block;
 }
 
-.work:hover .work-name{
-    font-size: 26px;
+.work:hover .work-img img{
+    opacity: 90%;
 }
 
 .icon {
